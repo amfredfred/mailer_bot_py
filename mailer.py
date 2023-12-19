@@ -39,7 +39,7 @@ def send_email(subject, body, to_email):
 def write_to_csv(filename, data):
     with open(filename, 'a', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(data)
+        writer.writerow(data) 
 
 # Read email addresses from a CSV file
 with open('email_addresses.csv', 'r') as file:
